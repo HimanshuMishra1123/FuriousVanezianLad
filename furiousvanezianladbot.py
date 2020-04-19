@@ -1,6 +1,5 @@
 import praw
 import time
-import config
 
 REPLY_MESSAGE = "Melone, I am on the FUCKING edge right now! You're trying to say \"Well done\" but the phrase \"Di Molto\" means \"A lot of\"! The correct Italian phrase you're looking for is \"Molto Bene\"! YOU SHOULD FUCKING KNOW THIS BECAUSE WE'RE ITALIAN! For the love of God, Melone, I AM BEGGING YOU SHOW SOME ITALIAN PRIDE AND GET IT RIGHT YOU RAPIST PIECE OF SHIT!"
 
