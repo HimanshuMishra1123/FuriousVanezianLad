@@ -1,4 +1,4 @@
-client_id = process.env.CLIENT_ID
-client_secret = process.env.CLIENT_SECRET
-username = process.env.USERNAME
-password = process.env.PASSWORD
+client_id = os.env.['CLIENT_ID']
+client_secret = os.env.['CLIENT_SECRET']
+username = os.env.['USERNAME']
+password = os.env.['PASSWORD']
