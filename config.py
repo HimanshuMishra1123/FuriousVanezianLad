@@ -1,4 +1,4 @@
-client_id = 'Dot5kDMF2evqHQ'
-client_secret = '0ldCRtzxFTChOHYn3j3cV2MmOVc'
+client_id = ''
+client_secret = ''
 username = 'FuriousVanezianLad'
-password = '#!M@/\/$#U'
+password = ''
