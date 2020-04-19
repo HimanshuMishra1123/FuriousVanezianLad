@@ -1,4 +1,4 @@
-client_id = 'client_id'
-client_secret = 'client_secret'
-username = 'username'
-password = 'password'
+client_id = 'Client_id'
+client_secret = 'Client_secret'
+username = 'Username'
+password = 'Password'
