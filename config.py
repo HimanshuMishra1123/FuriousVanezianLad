@@ -1,4 +1,4 @@
-client_id = os.env.['CLIENT_ID']
-client_secret = os.env.['CLIENT_SECRET']
-username = os.env.['USERNAME']
-password = os.env.['PASSWORD']
+client_id = os.environ['CLIENT_ID']
+client_secret = os.environ['CLIENT_SECRET']
+username = os.environ['USERNAME']
+password = os.environ['PASSWORD']
