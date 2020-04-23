@@ -50,10 +50,10 @@ def run_bot(reddit):
                 print('String with "Di Molto" found in comment {}',format(comment.id))
                 comment.reply(REPLY_MESSAGE)
                 print("Replied to comment " + comment.id)
-except Exception as e:
-    print("Got exception:{}".format(e))
-    print("Sleeping for 10 seconds...")
-    time.sleep(10)
+    except Exception as e:
+        print("Got exception:{}".format(e))
+        print("Sleeping for 10 seconds...")
+        time.sleep(10)
     
     
 if __name__ == '__main__':
