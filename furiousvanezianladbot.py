@@ -51,9 +51,9 @@ def run_bot(reddit):
                 comment.reply(REPLY_MESSAGE)
                 print("Replied to comment " + comment.id)
 except Exception as e:
-        print("Got exception:{}".format(e))
-        print("Sleeping for 10 seconds...")
-        time.sleep(10)
+    print("Got exception:{}".format(e))
+    print("Sleeping for 10 seconds...")
+    time.sleep(10)
     
     
 if __name__ == '__main__':
