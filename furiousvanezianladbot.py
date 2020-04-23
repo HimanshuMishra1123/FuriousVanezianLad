@@ -26,12 +26,31 @@ def run_bot(reddit):
     print("Obtaining 25 comments...")
     try:
         for comment in reddit.subreddit('ShitPostCrusaders+BlursedJojo+cursedjojo+expectedjojo+UnexpectedJoJo+QualityPostCrusaders+wholesomemudad+Animemes+blursedimages+ghiaccio_irl').stream.comments(skip_existing=True):
-            if "Di Molto" or "DI MOLTO!" or "di molto" or "di molto!" in comment.body and comment.author != reddit.user.me():
+            if "Di Molto" in comment.body and comment.author != reddit.user.me():
                 print('String with "Di Molto" found in comment {}',format(comment.id))
                 comment.reply(REPLY_MESSAGE)
                 print("Replied to comment " + comment.id)
-
-    except Exception as e:
+            if "Di Molto!" in comment.body and comment.author != reddit.user.me():
+                print('String with "Di Molto" found in comment {}',format(comment.id))
+                comment.reply(REPLY_MESSAGE)
+                print("Replied to comment " + comment.id)
+            if "di molto" in comment.body and comment.author != reddit.user.me():
+                print('String with "Di Molto" found in comment {}',format(comment.id))
+                comment.reply(REPLY_MESSAGE)
+                print("Replied to comment " + comment.id)
+            if "DI MOLTO" in comment.body and comment.author != reddit.user.me():
+                print('String with "Di Molto" found in comment {}',format(comment.id))
+                comment.reply(REPLY_MESSAGE)
+                print("Replied to comment " + comment.id)
+            if "di molto!" in comment.body and comment.author != reddit.user.me():
+                print('String with "Di Molto" found in comment {}',format(comment.id))
+                comment.reply(REPLY_MESSAGE)
+                print("Replied to comment " + comment.id)
+            if "DI MOLTO!" in comment.body and comment.author != reddit.user.me():
+                print('String with "Di Molto" found in comment {}',format(comment.id))
+                comment.reply(REPLY_MESSAGE)
+                print("Replied to comment " + comment.id)
+except Exception as e:
         print("Got exception:{}".format(e))
         print("Sleeping for 10 seconds...")
         time.sleep(10)
