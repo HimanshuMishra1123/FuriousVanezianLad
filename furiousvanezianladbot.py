@@ -25,7 +25,7 @@ def main():
 def run_bot(reddit):
     print("Obtaining 25 comments...")
     try:
-        for comment in reddit.subreddit('ShitPostCrusaders+BlursedJojo+cursedjojo+expectedjojo+UnexpectedJoJo+QualityPostCrusaders+wholesomemudad+Animemes+blursedimages+ghiaccio_irl').stream.comments(skip_existing=True):
+        for comment in reddit.subreddit('ShitPostCrusaders+BlursedJojo+cursedjojo+expectedjojo+UnexpectedJoJo+QualityPostCrusaders+wholesomemudad+blursedimages+ghiaccio_irl').stream.comments(skip_existing=True):
             if "Di Molto" in comment.body and comment.author != reddit.user.me():
                 print('String with "Di Molto" found in comment {}',format(comment.id))
                 comment.reply(REPLY_MESSAGE)
