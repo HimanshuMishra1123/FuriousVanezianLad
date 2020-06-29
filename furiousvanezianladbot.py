@@ -7,10 +7,10 @@ REPLY_MESSAGE = "Melone, I am on the FUCKING edge right now! You're trying to sa
 
 def authenticate():
     print("Authenticating...")
-    reddit = praw.Reddit(client_id = config.client_id,
-                    client_secret = config.client_secret,
-                    username = config.username,
-                    password = config.password,
+    reddit = praw.Reddit(client_id = os.environ['client_id'],
+                    client_secret = os.environ['client_secret'],
+                    username = os.environ['username'],
+                    password = os.environ['password'],
                     user_agent = 'FuriousVanezianLad by /u/FuriousVanezianLad')
     print("Authenticated as {}".format(reddit.user.me()))
     return reddit
