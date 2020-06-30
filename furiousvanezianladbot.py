@@ -25,31 +25,16 @@ def main():
 def run_bot(reddit):
     print("Obtaining 25 comments...")
     try:
-        for comment in reddit.subreddit('ShitPostCrusaders+BlursedJojo+cursedjojo+expectedjojo+UnexpectedJoJo+QualityPostCrusaders+wholesomemudad+blursedimages+ghiaccio_irl').stream.comments(skip_existing=True):
-            if "Di Molto" in comment.body and comment.author != reddit.user.me():
+        for comment in reddit.subreddit('ShitPostCrusaders+BlursedJojo+cursedjojo+expectedjojo+UnexpectedJoJo+QualityPostCrusaders+wholesomemudad+ghiaccio_irl').stream.comments(skip_existing=True):
+            if "Di Molto".lower() in comment.body.lower() and comment.author != reddit.user.me():
                 print('String with "Di Molto" found in comment {}',format(comment.id))
                 comment.reply(REPLY_MESSAGE)
                 print("Replied to comment " + comment.id)
-            if "Di Molto!" in comment.body and comment.author != reddit.user.me():
+            if "Di Molto!".lower() in comment.body.lower() and comment.author != reddit.user.me():
                 print('String with "Di Molto" found in comment {}',format(comment.id))
                 comment.reply(REPLY_MESSAGE)
                 print("Replied to comment " + comment.id)
-            if "di molto" in comment.body and comment.author != reddit.user.me():
-                print('String with "Di Molto" found in comment {}',format(comment.id))
-                comment.reply(REPLY_MESSAGE)
-                print("Replied to comment " + comment.id)
-            if "DI MOLTO" in comment.body and comment.author != reddit.user.me():
-                print('String with "Di Molto" found in comment {}',format(comment.id))
-                comment.reply(REPLY_MESSAGE)
-                print("Replied to comment " + comment.id)
-            if "di molto!" in comment.body and comment.author != reddit.user.me():
-                print('String with "Di Molto" found in comment {}',format(comment.id))
-                comment.reply(REPLY_MESSAGE)
-                print("Replied to comment " + comment.id)
-            if "DI MOLTO!" in comment.body and comment.author != reddit.user.me():
-                print('String with "Di Molto" found in comment {}',format(comment.id))
-                comment.reply(REPLY_MESSAGE)
-                print("Replied to comment " + comment.id)
+
     except Exception as e:
         print("Got exception:{}".format(e))
         print("Sleeping for 10 seconds...")
